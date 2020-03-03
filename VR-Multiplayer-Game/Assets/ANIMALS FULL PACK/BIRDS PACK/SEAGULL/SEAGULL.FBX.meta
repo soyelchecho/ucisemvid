@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: b2f67226788c95e4e8d1776191815e19
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: SEAGULL
+    100002: //RootNode
+    100004: SEAGULL_
+    100006: SEAGULL_ Head
+    100008: SEAGULL_ L Calf
+    100010: SEAGULL_ L Clavicle
+    100012: SEAGULL_ L Foot
+    100014: SEAGULL_ L Forearm
+    100016: SEAGULL_ L Hand
+    100018: SEAGULL_ L HorseLink
+    100020: SEAGULL_ L Thigh
+    100022: SEAGULL_ L Toe0
+    100024: SEAGULL_ L Toe01
+    100026: SEAGULL_ L Toe02
+    100028: SEAGULL_ L UpperArm
+    100030: SEAGULL_ Neck
+    100032: SEAGULL_ Pelvis
+    100034: SEAGULL_ Queue de cheval 1
+    100036: SEAGULL_ R Calf
+    100038: SEAGULL_ R Clavicle
+    100040: SEAGULL_ R Foot
+    100042: SEAGULL_ R Forearm
+    100044: SEAGULL_ R Hand
+    100046: SEAGULL_ R HorseLink
+    100048: SEAGULL_ R Thigh
+    100050: SEAGULL_ R Toe0
+    100052: SEAGULL_ R Toe01
+    100054: SEAGULL_ R Toe02
+    100056: SEAGULL_ R UpperArm
+    100058: SEAGULL_ Spine
+    100060: SEAGULL_ Tail
+    100062: SEAGULL_ TailL
+    100064: SEAGULL_ TailR
+    400000: SEAGULL
+    400002: //RootNode
+    400004: SEAGULL_
+    400006: SEAGULL_ Head
+    400008: SEAGULL_ L Calf
+    400010: SEAGULL_ L Clavicle
+    400012: SEAGULL_ L Foot
+    400014: SEAGULL_ L Forearm
+    400016: SEAGULL_ L Hand
+    400018: SEAGULL_ L HorseLink
+    400020: SEAGULL_ L Thigh
+    400022: SEAGULL_ L Toe0
+    400024: SEAGULL_ L Toe01
+    400026: SEAGULL_ L Toe02
+    400028: SEAGULL_ L UpperArm
+    400030: SEAGULL_ Neck
+    400032: SEAGULL_ Pelvis
+    400034: SEAGULL_ Queue de cheval 1
+    400036: SEAGULL_ R Calf
+    400038: SEAGULL_ R Clavicle
+    400040: SEAGULL_ R Foot
+    400042: SEAGULL_ R Forearm
+    400044: SEAGULL_ R Hand
+    400046: SEAGULL_ R HorseLink
+    400048: SEAGULL_ R Thigh
+    400050: SEAGULL_ R Toe0
+    400052: SEAGULL_ R Toe01
+    400054: SEAGULL_ R Toe02
+    400056: SEAGULL_ R UpperArm
+    400058: SEAGULL_ Spine
+    400060: SEAGULL_ Tail
+    400062: SEAGULL_ TailL
+    400064: SEAGULL_ TailR
+    4300000: SEAGULL
+    7400000: Take 001
+    11100000: //RootNode
+    13700000: SEAGULL
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SEAGULL
+    second: {fileID: 2100000, guid: 604a4daa08a8c764299255a091e655a2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,3 +1,3 @@
 # Children UCI
 
-proyecto para la uci con ayuda del semvid EAFIT
+Project for the UCI hostpitals in Medellín, Colombia using Unity 3D.

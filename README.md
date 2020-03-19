@@ -1,2 +1,3 @@
-# ucisemvid
-proyecto para la uci con ayuda del semvid EAFIT
+# Children UCI
+
+Project for the children UCI hospitals in Medellín, Colombia using Unity 3D.

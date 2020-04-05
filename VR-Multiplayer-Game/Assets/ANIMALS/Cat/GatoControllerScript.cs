@@ -7,11 +7,11 @@ public class GatoControllerScript : MonoBehaviour
 
     public Animator animador;
     public bool state;
-    public float ratioDecision = 3f;
-    private float ultimaDecision = 0.0f;
-    private float movementDuration = 2.0f;
-    private float waitBeforeMoving = 2.0f;
-    private bool hasArrived = false;
+    public float ratioDecision = 5f;
+    public float ultimaDecision = 0.0f;
+    public float movementDuration = 10.0f;
+    public float waitBeforeMoving = 1.0f;
+    public bool hasArrived = false;
 
     // Start is called before the first frame update     
     void Start()
@@ -25,7 +25,7 @@ public class GatoControllerScript : MonoBehaviour
     {
         if ((Time.time > ratioDecision + ultimaDecision))
         {
-            float decision = Random.Range(0, 1);
+            float decision = Random.Range(0, 2);
             if (decision == 1)
             {
                 animador.SetBool("walk", true);
@@ -43,7 +43,7 @@ public class GatoControllerScript : MonoBehaviour
             hasArrived = true;
             float randX = Random.Range(-5.0f, 5.0f);
             float randZ = Random.Range(-5.0f, 5.0f);
-            StartCoroutine(MoveToPoint(new Vector3(randX, -1.504f, randZ)));
+            StartCoroutine(MoveToPoint(new Vector3(randX, gameObject.transform.position.y, randZ)));
         }
     }
 
@@ -52,6 +52,7 @@ public class GatoControllerScript : MonoBehaviour
     {
         float timer = 0.0f;
         Vector3 startPos = transform.position;
+        transform.rotation = Quaternion.LookRotation(targetPos);
 
         while (timer < movementDuration)
         {

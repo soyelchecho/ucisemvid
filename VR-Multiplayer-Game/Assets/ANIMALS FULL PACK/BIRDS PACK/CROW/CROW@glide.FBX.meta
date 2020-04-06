@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 33fb211b22df3004a85bbbe0f31f925f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CROW_
+    100004: CROW_ Head
+    100006: CROW_ L Calf
+    100008: CROW_ L Clavicle
+    100010: CROW_ L Foot
+    100012: CROW_ L Forearm
+    100014: CROW_ L Hand
+    100016: CROW_ L HorseLink
+    100018: CROW_ L Thigh
+    100020: CROW_ L Toe0
+    100022: CROW_ L Toe01
+    100024: CROW_ L Toe02
+    100026: CROW_ L Toe1
+    100028: CROW_ L Toe11
+    100030: CROW_ L Toe12
+    100032: CROW_ L UpperArm
+    100034: CROW_ Neck
+    100036: CROW_ Pelvis
+    100038: CROW_ Queue de cheval 1
+    100040: CROW_ R Calf
+    100042: CROW_ R Clavicle
+    100044: CROW_ R Foot
+    100046: CROW_ R Forearm
+    100048: CROW_ R Hand
+    100050: CROW_ R HorseLink
+    100052: CROW_ R Thigh
+    100054: CROW_ R Toe0
+    100056: CROW_ R Toe01
+    100058: CROW_ R Toe02
+    100060: CROW_ R Toe1
+    100062: CROW_ R Toe11
+    100064: CROW_ R Toe12
+    100066: CROW_ R UpperArm
+    100068: CROW_ Spine
+    100070: CROW_ Tail
+    100072: CROW_ TailL
+    100074: CROW_ TailR
+    400000: //RootNode
+    400002: CROW_
+    400004: CROW_ Head
+    400006: CROW_ L Calf
+    400008: CROW_ L Clavicle
+    400010: CROW_ L Foot
+    400012: CROW_ L Forearm
+    400014: CROW_ L Hand
+    400016: CROW_ L HorseLink
+    400018: CROW_ L Thigh
+    400020: CROW_ L Toe0
+    400022: CROW_ L Toe01
+    400024: CROW_ L Toe02
+    400026: CROW_ L Toe1
+    400028: CROW_ L Toe11
+    400030: CROW_ L Toe12
+    400032: CROW_ L UpperArm
+    400034: CROW_ Neck
+    400036: CROW_ Pelvis
+    400038: CROW_ Queue de cheval 1
+    400040: CROW_ R Calf
+    400042: CROW_ R Clavicle
+    400044: CROW_ R Foot
+    400046: CROW_ R Forearm
+    400048: CROW_ R Hand
+    400050: CROW_ R HorseLink
+    400052: CROW_ R Thigh
+    400054: CROW_ R Toe0
+    400056: CROW_ R Toe01
+    400058: CROW_ R Toe02
+    400060: CROW_ R Toe1
+    400062: CROW_ R Toe11
+    400064: CROW_ R Toe12
+    400066: CROW_ R UpperArm
+    400068: CROW_ Spine
+    400070: CROW_ Tail
+    400072: CROW_ TailL
+    400074: CROW_ TailR
+    7400000: glide
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: glide
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

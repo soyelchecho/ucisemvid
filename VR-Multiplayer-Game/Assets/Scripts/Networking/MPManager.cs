@@ -5,6 +5,7 @@ using Photon;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class MPManager : MonoBehaviourPunCallbacks {
 
@@ -40,8 +41,24 @@ public class MPManager : MonoBehaviourPunCallbacks {
     public void CreateNormalGame() {
         PhotonNetwork.AutomaticallySyncScene = true;
 
-        RoomOptions ro = new RoomOptions {MaxPlayers = 2, IsOpen = true, IsVisible = true};
-        PhotonNetwork.CreateRoom("defaultNormal", ro, TypedLobby.Default);
+        // RoomOptions ro = new RoomOptions {MaxPlayers = 3, IsOpen = true, IsVisible = true};
+        // PhotonNetwork.CreateRoom("defaultNormal", ro, TypedLobby.Default);
+        RoomOptions roomOptions = new RoomOptions(); 
+        roomOptions.MaxPlayers = 2; 
+        roomOptions.PublishUserId = true; 
+        roomOptions.IsVisible = true; 
+        roomOptions.PlayerTtl = 0; 
+        roomOptions.EmptyRoomTtl = 0;
+        roomOptions.CustomRoomProperties = CreateRoomProperties();
+        roomOptions.CustomRoomPropertiesForLobby = CreateRoomPropertiesForLobby();
+        PhotonNetwork.CreateRoom("game", roomOptions, null);
+    }
+
+    Hashtable CreateRoomProperties() { 
+        return new Hashtable { { "levelIndex", 0 } }; 
+    }
+    string[] CreateRoomPropertiesForLobby() { 
+            return new string[] { "levelIndex" };
     }
 
     public override void OnJoinedRoom() {

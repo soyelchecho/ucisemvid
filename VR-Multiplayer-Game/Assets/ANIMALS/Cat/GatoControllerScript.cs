@@ -17,7 +17,6 @@ public class GatoControllerScript : MonoBehaviour
     void Start()
     {
         state = false;
-        animador = GetComponent<Animator>();
     }
 
     // Update is called once per frame     

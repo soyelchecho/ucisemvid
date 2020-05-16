@@ -277,6 +277,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 1547570145}
+  - {fileID: 0}
   viewIdField: 1
   InstantiationId: 1
   isRuntimeInstantiated: 0
@@ -306,4 +307,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPoint: {x: 0, y: 0, z: 0}
-  gato: {fileID: 2126470951662005859, guid: 448f62e1984834a41aeb6426cbb4546d, type: 3}
+  gato: {fileID: 6922168881543997418, guid: 8c6c7f41dc4ba324eb85db6182a62ce4, type: 3}

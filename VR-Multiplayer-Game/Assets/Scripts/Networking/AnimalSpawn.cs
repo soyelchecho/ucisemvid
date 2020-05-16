@@ -16,8 +16,8 @@ public class AnimalSpawn : MonoBehaviourPunCallbacks, Photon.Pun.IPunObservable
     void Start()
     {
         cantidad = 0;
-        initialPoint = new Vector3(0, 10f, 0);
-        StartCoroutine(Spawn(10, initialPoint));
+        initialPoint = new Vector3(0, 100f, 0);
+        StartCoroutine(Spawn(5, initialPoint));
     }
 
     // Update is called once per frame
@@ -27,16 +27,16 @@ public class AnimalSpawn : MonoBehaviourPunCallbacks, Photon.Pun.IPunObservable
     }
 
     private IEnumerator Spawn(float needed, Vector3 initialPosition) {
-        float randX = Random.Range(-20.0f, 20.0f);
-        float randZ = Random.Range(-20.0f, 20.0f);
+        float randX = Random.Range(0.0f, 20.0f);
+        float randZ = Random.Range(0.0f, 20.0f);
         Vector3 startPos = initialPosition;
         startPos += new Vector3(randX, randZ);
 
         while (needed != 0) {
             GameObject animal = PhotonNetwork.Instantiate("Gato Prefab", startPos, Quaternion.identity, 0);
             animal.transform.rotation = Quaternion.LookRotation(startPos);
-            randX = Random.Range(-20.0f, 20.0f);
-            randZ = Random.Range(-20.0f, 20.0f);
+            randX = Random.Range(0.0f, 20.0f);
+            randZ = Random.Range(0.0f, 20.0f);
             startPos += new Vector3(randX, randZ);
             needed -= 1;
             cantidad += 1;

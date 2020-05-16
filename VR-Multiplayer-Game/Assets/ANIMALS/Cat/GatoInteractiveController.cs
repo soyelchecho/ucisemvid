@@ -42,6 +42,7 @@ public class GatoInteractiveController : MonoBehaviour
             gato.GetComponent<GatoControllerScript>().enabled = false;
         }
     }
+
     private void setAnimations(bool idlep, bool activep, bool animationcookiep)
     {
         animador.SetBool("sentado", idlep);

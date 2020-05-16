@@ -12,6 +12,13 @@ public class GatoControllerScript : MonoBehaviour
     public float movementDuration = 10.0f;
     public float waitBeforeMoving = 1.0f;
     public bool hasArrived = false;
+    public bool galleta = false;
+    private GameObject target;
+    private Vector3 targetPoint;
+    private Quaternion targetRotation;
+    public AudioClip audioClip1;
+    public AudioClip audioClip2;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update     
     void Start()
@@ -25,20 +32,14 @@ public class GatoControllerScript : MonoBehaviour
         if ((Time.time > ratioDecision + ultimaDecision))
         {
             float decision = Random.Range(0, 2);
-            if (decision == 1)
-            {
-                animador.SetBool("walk", true);
+            if (decision == 1) {
                 state = true;
-            }
-            else
-            {
-                animador.SetBool("walk", false);
+            } else {
                 state = false;
             }
             ultimaDecision = Time.time;
         }
-        if (!hasArrived && state == true)
-        {
+        if (!hasArrived && state == true && galleta == false) {
             hasArrived = true;
             float randX = Random.Range(-5.0f, 5.0f);
             float randZ = Random.Range(-5.0f, 5.0f);
@@ -46,8 +47,53 @@ public class GatoControllerScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Player" && galleta == false) {
+            transform.LookAt(other.transform.position);
+            galleta = true;
+            setAnimations(false, true, false);
+        }
+    }
 
-    private IEnumerator MoveToPoint(Vector3 targetPos)
+    void OnTriggerStay(Collider other)
+    {
+        if (other.transform.tag == "Player" && galleta == true && Input.GetKeyDown("space"))
+        {
+            float decision = Random.Range(0, 2);
+            if (decision == 1)
+            {
+                audioSource.clip = audioClip1;
+            }
+            else
+            {
+                audioSource.clip = audioClip2;
+            }
+            audioSource.Play();
+            setAnimations(false, false, true);
+            galleta = false;
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other.transform.tag == "Player" && galleta == true) {
+            galleta = false;
+            var rotationVector = transform.rotation.eulerAngles;
+            rotationVector.z = 0;
+            rotationVector.x = 0;
+            rotationVector.y = 0;
+            transform.rotation = Quaternion.Euler(rotationVector);
+            setAnimations(false, true, false);
+        }
+    }
+
+    private void setAnimations(bool idlep, bool activep, bool animationcookiep) {
+        animador.SetBool("sentado", idlep);
+        animador.SetBool("levantarse", activep);
+        animador.SetBool("tomarGalleta", animationcookiep);
+    }
+
+    public IEnumerator MoveToPoint(Vector3 targetPos)
     {
         float timer = 0.0f;
         Vector3 startPos = transform.position;
@@ -56,9 +102,12 @@ public class GatoControllerScript : MonoBehaviour
         while (timer < movementDuration)
         {
             timer += Time.deltaTime;
-            float t = timer / movementDuration;
-            t = t * t * t * (t * (6f * t - 15f) + 10f);
-            transform.position = Vector3.Lerp(startPos, targetPos, t);
+            if (galleta == false)
+            {
+                float t = timer / movementDuration;
+                t = t * t * t * (t * (6f * t - 15f) + 10f);
+                transform.position = Vector3.Lerp(startPos, targetPos, t);
+            }
 
             yield return null;
         }
